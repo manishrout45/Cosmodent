@@ -27,7 +27,7 @@ export default function AboutSection() {
           
           {/* Main Image */}
           <img
-            src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db"
+            src="https://img.freepik.com/free-photo/dental-chair-other-accesorries-used-by-dentist-empty-cabinet-stomatology-cabinet-with-nobody-it-orange-equipment-oral-treatment_482257-12475.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80"
             alt="Cosmodent Clinic"
             className={`absolute top-0 left-0 w-[80%] h-[380px] object-cover rounded-2xl shadow-xl transition-all duration-1000 ${
               visible
@@ -38,7 +38,7 @@ export default function AboutSection() {
 
           {/* Overlapping Image */}
           <img
-            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5"
+            src="https://img.freepik.com/free-photo/angled-mirror-used-by-dentist-doctor-little-girl-with-mouth-open-dental-office-dentistry-specialist-child-cavity-consultation-stomatology-office-using-modern-technology_482257-12106.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80"
             alt="Dental Treatment"
             className={`absolute bottom-0 right-0 w-[55%] h-[220px] object-cover rounded-xl border-4 border-white shadow-lg transition-all duration-1000 delay-200 ${
               visible
