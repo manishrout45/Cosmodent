@@ -8,6 +8,7 @@ import ContactSection from "../components/ContactSection";
 import StatsSection from "../components/StatsSection";
 import FAQSection from "../components/FAQSection";
 import WhyChooseUs from "../components/WhyChooseUs";
+import OurTeam from "../components/OurTeam";
 
 const Home = () => {
   useScrollFade(); // default class "fade-up"
@@ -19,6 +20,7 @@ const Home = () => {
       <ServiceSection className="fade-left" />
       <StatsSection />
       <WhyChooseUs />
+      <OurTeam />
       <FAQSection />
       <GallerySection className="fade-left" />
       <Testimonial className="fade-right" />

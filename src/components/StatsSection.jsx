@@ -2,10 +2,10 @@ import React from "react";
 import { useEffect, useRef, useState } from "react";
 
 const statsData = [
-  { value: 10000, suffix: "+", label: "Happy Patients" },
-  { value: 2500, suffix: "+", label: "Teeth Whitened" },
-  { value: 800, suffix: "+", label: "Dental Implants" },
-  { value: 15, suffix: "+", label: "Years of Experience" },
+  { value: 1000, suffix: "+", label: "Happy Patients" },
+  { value: 250, suffix: "+", label: "Teeth Whitened" },
+  { value: 80, suffix: "+", label: "Dental Implants" },
+  { value: 10, suffix: "+", label: "Years of Experience" },
 ];
 
 function Counter({ target, suffix, start }) {
@@ -60,7 +60,7 @@ export default function StatsSection() {
   }, []);
 
   return (
-    <section ref={ref} className="dark-section bg-[#1F2A5A] text-white py-12">
+    <section ref={ref} className=" bg-[#cfa831] text-white py-12">
       <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         {statsData.map((stat, index) => (
           <div key={index}>
@@ -71,7 +71,7 @@ export default function StatsSection() {
                 start={startCount}
               />
             </h2>
-            <p className="mt-2 text-sm md:text-base text-[#C9A23F]">
+            <p className="mt-2 text-sm md:text-base text-gray-800">
               {stat.label}
             </p>
           </div>

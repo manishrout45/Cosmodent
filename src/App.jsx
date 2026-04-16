@@ -8,6 +8,10 @@ import FloatingButtons from "./components/FloatingButtons";
 
 // Page imports
 import Home from "./pages/Home";
+import ServiceDetails from "./pages/ServiceDetails";
+import Contact from "./pages/Contact";
+import Team from "./pages/Team";
+
 
 // AOS for scroll animations
 import AOS from "aos";
@@ -29,6 +33,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/service/:id" element={<ServiceDetails />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
 
       <Footer />

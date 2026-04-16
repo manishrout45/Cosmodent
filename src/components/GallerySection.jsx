@@ -3,24 +3,36 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const images = [
   {
-    src: "https://img.freepik.com/free-photo/dentist-doing-check-up-patient_23-2149206214.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    src: "https://img.freepik.com/free-photo/dentist-doing-check-up-patient_23-2149206214.jpg?w=740",
     title: "Before Treatment",
   },
   {
-    src: "https://img.freepik.com/free-photo/young-female-dentist-showing-patient-dental-xray-dentistry-concept_169016-66973.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    src: "https://img.freepik.com/free-photo/young-female-dentist-showing-patient-dental-xray-dentistry-concept_169016-66973.jpg?w=740",
     title: "Transformation",
   },
   {
-    src: "https://img.freepik.com/free-photo/dentist-treats-childs-tooth-using-rubber-dam-closeup-tooth-treatment_169016-66968.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    src: "https://img.freepik.com/free-photo/dentist-treats-childs-tooth-using-rubber-dam-closeup-tooth-treatment_169016-66968.jpg?w=740",
     title: "Procedure",
   },
   {
-    src: "https://img.freepik.com/premium-photo/expert-dental-care_425122-3836.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    src: "https://img.freepik.com/premium-photo/expert-dental-care_425122-3836.jpg?w=740",
     title: "Dental Care",
   },
   {
-    src: "https://img.freepik.com/premium-photo/smiling-young-woman-indian-descent-against-neutral-background_731930-138429.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    src: "https://img.freepik.com/premium-photo/smiling-young-woman-indian-descent-against-neutral-background_731930-138429.jpg?w=740",
     title: "Happy Smile",
+  },
+  {
+    src: "https://img.freepik.com/free-photo/close-up-boy-dentist_23-2149206291.jpg?t=st=1776256609~exp=1776260209~hmac=d1391b2cc12a029c7c1ebe4e5f02e71d7b70d5fed160d83d873a7e19ceaddd8f&w=740",
+    title: "Consultation",
+  },
+  {
+    src: "https://img.freepik.com/free-photo/close-up-dentist-instruments_23-2151042903.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    title: "Advanced Tools",
+  },
+  {
+    src: "https://img.freepik.com/free-photo/young-female-dentist-treating-patients-teeth-with-dental-microscope-dentistry-concept_169016-67001.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    title: "Professional Treatment",
   },
 ];
 
@@ -36,22 +48,20 @@ export default function GallerySection() {
   };
 
   return (
-    <section className="bg-blue-950 py-24 text-white overflow-hidden relative z-0 isolate">
+    <section className="bg-[#cfa831] py-24 text-white overflow-hidden relative">
       <div className="max-w-7xl mx-auto px-4 text-center">
 
         {/* Header */}
-       <p className="text-[#C9A23F] font-medium mb-2">
-  Our Gallery
-</p>
+        <p className="text-gray-800 font-medium mb-2">Our Gallery</p>
 
-<h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-  Futuristic Transformations
-</h2>
+        <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+          Futuristic Transformations
+        </h2>
 
-<p className="text-white/70 max-w-2xl mx-auto mb-20">
-  Explore our latest dental transformations, showcasing precision,
-  care, and life-changing smile makeovers.
-</p>
+        <p className="text-white/70 max-w-2xl mx-auto mb-20">
+          Explore our latest dental transformations, showcasing precision,
+          care, and life-changing smile makeovers.
+        </p>
 
         {/* Arrows */}
         <div className="flex justify-center gap-6 mb-10">
@@ -73,12 +83,17 @@ export default function GallerySection() {
         <div className="relative flex justify-center items-center h-[450px] perspective-[1200px]">
 
           {images.map((item, index) => {
-            const offset = index - active;
+            const total = images.length;
+            let offset = index - active;
+
+            // ✅ Infinite circular fix
+            if (offset > total / 2) offset -= total;
+            if (offset < -total / 2) offset += total;
 
             return (
               <div
                 key={index}
-                className="absolute transition-all duration-700 ease-in-out cursor-pointer"
+                className="absolute transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] cursor-pointer"
                 style={{
                   transform: `
                     translateX(${offset * 260}px)
@@ -93,8 +108,9 @@ export default function GallerySection() {
                 <div className="relative w-[260px] h-[360px] rounded-2xl overflow-hidden shadow-2xl">
 
                   {/* Glow */}
-                  <div className="absolute -inset-2 bg-blue-500 blur-2xl opacity-20"></div>
+                  <div className="absolute -inset-2 bg-[#cfa831] blur-2xl opacity-20"></div>
 
+                  {/* Image */}
                   <img
                     src={item.src}
                     alt={item.title}
@@ -102,7 +118,7 @@ export default function GallerySection() {
                   />
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-black/40 flex items-end p-4">
+                  <div className="absolute inset-0 bg-black/20 flex items-end p-4">
                     <h3 className="text-white text-sm font-semibold">
                       {item.title}
                     </h3>

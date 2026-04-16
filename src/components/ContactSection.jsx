@@ -2,10 +2,9 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="w-full bg-white">
+    <section id="contact" className="w-full bg-gradient-to-br from-[#f7f7ee] to-[#f8f8e2]">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row">
         
-        {/* 🦷 Tooth-Shaped Map Section */}
         <div className="w-full lg:w-1/2 h-[600px] flex items-center justify-center">
           
           <div
@@ -38,8 +37,7 @@ const ContactSection = () => {
         </div>
 
         {/* Contact Form Section */}
-        {/* Contact Form Section */}
-<div className="w-full lg:w-1/2 bg-white p-10 flex flex-col justify-between">
+<div className="w-full lg:w-1/2 bg-gradient-to-br from-[#f7f7ee] to-[#f8f8e2] p-10 flex flex-col justify-between">
 
   {/* 🔥 Content Wrapper with Animation */}
   <div
@@ -51,7 +49,7 @@ const ContactSection = () => {
   >
     
     {/* Label */}
-    <p className="text-[#C9A23F] font-semibold mb-3">
+    <p className="text-[#cfa831] font-semibold mb-3">
       Contact Us
     </p>
 
@@ -72,30 +70,30 @@ const ContactSection = () => {
         <input
           type="text"
           placeholder="Your Name"
-          className="border-b border-gray-300 focus:outline-none focus:border-b-[#C9A23F] flex-1 pb-3 text-gray-700 placeholder-gray-400"
+          className="border-b border-gray-300 focus:outline-none focus:border-b-[#cfa831] flex-1 pb-3 text-gray-700 placeholder-gray-400"
         />
         <input
           type="email"
           placeholder="Your Email"
-          className="border-b border-gray-300 focus:outline-none focus:border-b-[#C9A23F] flex-1 pb-3 text-gray-700 placeholder-gray-400"
+          className="border-b border-gray-300 focus:outline-none focus:border-b-[#cfa831] flex-1 pb-3 text-gray-700 placeholder-gray-400"
         />
       </div>
 
       <textarea
         placeholder="Your Message"
         rows="4"
-        className="border-b border-gray-300 focus:outline-none focus:border-b-[#1F2A5A] pb-3 text-gray-700 placeholder-gray-400"
+        className="border-b border-gray-300 focus:outline-none focus:border-b-[#cfa831] pb-3 text-gray-700 placeholder-gray-400"
       ></textarea>
 
-      <button
+<button
   type="submit"
-  className="group relative self-start inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#1F2A5A] text-white font-medium overflow-hidden transition duration-300 hover:shadow-lg"
+  className="group relative self-start inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#cfa831] text-white font-medium overflow-hidden transition duration-300 hover:shadow-lg"
 >
   {/* Default Text */}
   <span className="relative z-10">Submit Request →</span>
 
   {/* Hover Background Slide */}
-  <span className="absolute inset-0 bg-[#C9A23F] translate-y-full group-hover:translate-y-0 transition duration-300"></span>
+  <span className="absolute inset-0 bg-gray-800 translate-y-full group-hover:translate-y-0 transition duration-300"></span>
 
   {/* Hover Text */}
   <span className="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition duration-300">

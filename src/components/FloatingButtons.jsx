@@ -18,19 +18,19 @@ export default function FloatingButtons() {
         >
           <span className="text-sm text-gray-700">Chat with us</span>
           <a
-            href="https://wa.me/91987654321"
+            href="https://wa.me/917077514443"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-600 font-semibold"
           >
-            +91 98765 4321
+            +91 70775 14443
           </a>
         </div>
 
         {/* Square Button */}
         <div
           className="w-12 h-12 bg-green-600 flex items-center justify-center 
-                     shadow-lg hover:bg-green-700 transition-all duration-300 cursor-pointer z-10"
+                     shadow-lg hover:bg-green-700 transition-all duration-300 cursor-pointer z-10 rounded-l-lg"
         >
           <FaWhatsapp className="text-white text-xl" />
         </div>
@@ -49,17 +49,17 @@ export default function FloatingButtons() {
         >
           <span className="text-sm text-gray-700">Call us</span>
           <a
-            href="tel:+91987654321"
+            href="tel:+917077514443"
             className="text-blue-600 font-semibold"
           >
-            +91 98765 4321
+            +91 70775 14443
           </a>
         </div>
 
         {/* Square Button */}
         <div
           className="w-12 h-12 bg-blue-600 flex items-center justify-center 
-                     shadow-lg hover:bg-blue-700 transition-all duration-300 cursor-pointer z-10"
+                     shadow-lg hover:bg-blue-700 transition-all duration-300 cursor-pointer z-10 rounded-l-lg"
         >
           <FaPhoneAlt className="text-white text-lg" />
         </div>

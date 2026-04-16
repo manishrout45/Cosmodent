@@ -19,7 +19,7 @@ export default function AboutSection() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full py-24 bg-[#F5F7FA] overflow-hidden">
+    <section ref={sectionRef} className="w-full py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
         
         {/* 🔥 Image Section */}
@@ -56,7 +56,7 @@ export default function AboutSection() {
               : "opacity-0 translate-x-10"
           }`}
         >
-          <p className="text-[#C9A23F] font-semibold mb-3">About Cosmodent</p>
+          <p className="text-[#cfa831] font-semibold mb-3">About Cosmodent</p>
 
           <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-snug text-[#1F2A5A]">
             Advanced Dental & Aesthetic Care for a Confident Smile
@@ -80,7 +80,7 @@ export default function AboutSection() {
               "Personalized Patient Care",
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
-                <FaCheck className="text-[#C9A23F] mt-1" />
+                <FaCheck className="text-[#cfa831] mt-1" />
                 <p className="text-gray-700">{item}</p>
               </div>
             ))}
@@ -90,12 +90,12 @@ export default function AboutSection() {
           <div className="mt-10">
             <Link
               to="/about"
-              className="group relative inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#1F2A5A] text-white font-medium overflow-hidden transition duration-300 hover:shadow-lg"
+              className="group relative inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#cfa831] text-white font-medium overflow-hidden transition duration-300 hover:shadow-lg"
             >
               <span className="relative z-10">View More</span>
 
               {/* Hover Effect */}
-              <span className="absolute inset-0 bg-[#C9A23F] translate-y-full group-hover:translate-y-0 transition duration-300"></span>
+              <span className="absolute inset-0 bg-gray-800 translate-y-full group-hover:translate-y-0 transition duration-300"></span>
 
               {/* Text Overlay */}
               <span className="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition duration-300">

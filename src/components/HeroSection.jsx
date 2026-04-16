@@ -3,7 +3,7 @@ import { FaStar, FaClock, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 
 export default function HeroSection() {
   return (
-    <section className="dark-section relative w-full min-h-screen flex items-center">
+    <section className=" relative w-full min-h-screen flex items-center">
       
       {/* Background Image */}
       <img
@@ -13,7 +13,7 @@ export default function HeroSection() {
       />
 
       {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#1F2A5A]/90 via-[#1F2A5A]/70 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-[#cfa831]/90 via-[#cfa831]/70 to-transparent"></div>
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 text-white py-20">
@@ -49,12 +49,12 @@ export default function HeroSection() {
       </div>
 
       {/* 🔥 Bottom Info Bar */}
-<div className="absolute bottom-0 left-0 w-full bg-[#1F2A5A]/90 backdrop-blur-md text-white border-t border-white/10">
+<div className="absolute bottom-0 left-0 w-full bg-[#cfa831]/90 backdrop-blur-md text-white border-t border-white/10">
   <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
     
     {/* Item 1 */}
     <div className="flex flex-col items-center md:items-start px-6">
-      <FaClock className="text-[#C9A23F] mb-2" />
+      <FaClock className="text-gray-800 mb-2" />
       <p className="font-semibold">Opening Hours</p>
       <p className="text-white/70 text-sm">Mon - Fri: 08.00 - 18.00</p>
     </div>
@@ -64,7 +64,7 @@ export default function HeroSection() {
 
     {/* Item 2 */}
     <div className="flex flex-col items-center md:items-start px-6">
-      <FaMapMarkerAlt className="text-[#C9A23F] mb-2" />
+      <FaMapMarkerAlt className="text-gray-800 mb-2" />
       <p className="font-semibold">Our Location</p>
       <p className="text-white/70 text-sm">100 S Main St, New York</p>
     </div>
@@ -74,7 +74,7 @@ export default function HeroSection() {
 
     {/* Item 3 */}
     <div className="flex flex-col items-center md:items-start px-6">
-      <FaEnvelope className="text-[#C9A23F] mb-2" />
+      <FaEnvelope className="text-gray-800 mb-2" />
       <p className="font-semibold">Email Us</p>
       <p className="text-white/70 text-sm">contact@dentiacare.com</p>
     </div>

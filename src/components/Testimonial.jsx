@@ -5,31 +5,31 @@ import { ImQuotesLeft } from "react-icons/im";
 const testimonials = [
   {
     name: "Alexa P.",
-    role: "Customer",
+    role: "Patient",
     image: "https://img.freepik.com/premium-photo/woman-wearing-white-shirt-black-jacket-with-white-shirt-that-says-she-is-smiling_1294269-1864.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
     text: "They're professional, friendly, and genuinely care about your dental health.",
   },
   {
     name: "Michael S.",
-    role: "Customer",
+    role: "Patient",
     image: "https://img.freepik.com/premium-photo/man-with-glasses-sweater-that-says-he-s-wearing-glasses_916191-430008.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
     text: "I've always been nervous about dental visits, but the staff made me feel comfortable.",
   },
   {
     name: "Robert L.",
-    role: "Customer",
+    role: "Patient",
     image: "https://img.freepik.com/premium-photo/professional-linkedin-profile-photo-young-man-suit-tie-smiling-confidently_1141323-1517.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
     text: "Exceptional service! The team always goes the extra mile.",
   },
   {
     name: "David K.",
-    role: "Customer",
+    role: "Patient",
     image: "https://img.freepik.com/premium-photo/man-wearing-glasses-shirt-that-says-he-is-smiling_984237-62020.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
     text: "Highly professional and friendly environment.",
   },
   {
     name: "Chris M.",
-    role: "Customer",
+    role: "Patient",
     image: "https://img.freepik.com/premium-photo/smiling-young-businessman-suit-profile-picture_1063985-24436.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
     text: "Amazing experience every time. Clean clinic and supportive staff.",
   },
@@ -68,14 +68,14 @@ export default function Testimonial() {
   };
 
   return (
-    <section className="relative bg-[#F5F7FA] py-24 overflow-hidden">
+    <section className="relative bg-white py-24 overflow-hidden">
       
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 relative z-10">
 
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-[#C9A23F] font-medium mb-2">Testimonials</p>
+          <p className="text-[#cfa831] font-medium mb-2">Testimonials</p>
           <h2 className="text-3xl md:text-4xl font-bold text-[#1F2A5A]">
             Our Happy Patients
           </h2>
@@ -87,14 +87,14 @@ export default function Testimonial() {
         {/* Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 bg-white shadow-md p-3 rounded-full hover:bg-[#C9A23F] hover:text-white transition"
+          className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 bg-white shadow-md p-3 rounded-full hover:bg-[#cfa831] hover:text-white transition"
         >
           <FaChevronLeft />
         </button>
 
         <button
           onClick={nextSlide}
-          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 bg-white shadow-md p-3 rounded-full hover:bg-[#C9A23F] hover:text-white transition"
+          className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 bg-white shadow-md p-3 rounded-full hover:bg-[#cfa831] hover:text-white transition"
         >
           <FaChevronRight />
         </button>
@@ -118,7 +118,7 @@ export default function Testimonial() {
                   {/* Top Content */}
                   <div>
                     {/* Quote Icon */}
-                    <div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-[#C9A23F]/10 text-[#C9A23F]">
+                    <div className="w-12 h-12 mx-auto mb-4 flex items-center justify-center rounded-full bg-[#cfa831]/10 text-[#cfa831]">
                       <ImQuotesLeft />
                     </div>
 

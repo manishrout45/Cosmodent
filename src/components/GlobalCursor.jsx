@@ -28,8 +28,8 @@ export default function GlobalCursor() {
         dot.style.background = "#C9A23F"; // GOLD
         ring.style.borderColor = "#C9A23F";
       } else {
-        dot.style.background = "#1F2A5A"; // NAVY
-        ring.style.borderColor = "#1F2A5A";
+        dot.style.background = "#2d3748"; // NAVY
+        ring.style.borderColor = "#2d3748";
       }
     };
 

@@ -38,12 +38,12 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="bg-[#f5f7fb] py-16 px-4 md:px-10">
+    <section className="bg-gradient-to-br from-[#f7f7ee] to-[#f8f8e2] py-16 px-4 md:px-10">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
         
         {/* LEFT CONTENT */}
         <div>
-          <p className="text-[#C9A23F] font-medium mb-2">
+          <p className="text-[#cfa831] font-medium mb-2">
             Everything You Need to Know
           </p>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1c2b4a] leading-tight">
