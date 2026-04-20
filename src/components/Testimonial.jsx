@@ -4,34 +4,34 @@ import { ImQuotesLeft } from "react-icons/im";
 
 const testimonials = [
   {
-    name: "Alexa P.",
+    name: "Dipti Mohanty",
     role: "Patient",
-    image: "https://img.freepik.com/premium-photo/woman-wearing-white-shirt-black-jacket-with-white-shirt-that-says-she-is-smiling_1294269-1864.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
-    text: "They're professional, friendly, and genuinely care about your dental health.",
+    image: "https://cdn-icons-png.freepik.com/256/459/459122.png?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_white_label",
+    text: "I recently got my teeth whitening done at Cosmodent Clinic by Dr. Debahuti Patnaik, and I’m really happy with the results. She was very gentle, professional, and made the whole process comfortable. Highly recommend her service!",
   },
   {
-    name: "Michael S.",
+    name: "Susanta Das",
     role: "Patient",
-    image: "https://img.freepik.com/premium-photo/man-with-glasses-sweater-that-says-he-s-wearing-glasses_916191-430008.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
-    text: "I've always been nervous about dental visits, but the staff made me feel comfortable.",
+    image: "https://cdn-icons-png.freepik.com/256/459/459122.png?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_white_label",
+    text: "I'm very satisfied for my teeth treatment and this clinic is very clean and doctors are very cooperative and caring.",
   },
   {
-    name: "Robert L.",
+    name: "Arpita Mohanty",
     role: "Patient",
-    image: "https://img.freepik.com/premium-photo/professional-linkedin-profile-photo-young-man-suit-tie-smiling-confidently_1141323-1517.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
-    text: "Exceptional service! The team always goes the extra mile.",
+    image: "https://cdn-icons-png.freepik.com/256/459/459122.png?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_white_label",
+    text: "Got my filling and root canal done here with utmost comfort and easy on the pockets. The best part is Dr. Debahuti is the most co-operative dentist I have met and she handled a very difficult tooth situation at ease.",
   },
   {
-    name: "David K.",
+    name: "Sthitapragyan Biswal",
     role: "Patient",
-    image: "https://img.freepik.com/premium-photo/man-wearing-glasses-shirt-that-says-he-is-smiling_984237-62020.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
-    text: "Highly professional and friendly environment.",
+    image: "https://cdn-icons-png.freepik.com/256/459/459122.png?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_white_label",
+    text: "Very Experienced Doctor. Very Friendly and the price of Crowns are very reasonable in comparison to other clinics, same quality same brand but the Doctor is not greedy. Thank You. Must visit for any dental requirements",
   },
   {
-    name: "Chris M.",
+    name: "ORI SOURCES",
     role: "Patient",
-    image: "https://img.freepik.com/premium-photo/smiling-young-businessman-suit-profile-picture_1063985-24436.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
-    text: "Amazing experience every time. Clean clinic and supportive staff.",
+    image: "https://cdn-icons-png.freepik.com/256/459/459122.png?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_white_label",
+    text: "Excellent facial and skin treatment with visible results. The doctors at Cosmodent Speciality Center ensure safe, effective, and customized care.",
   },
 ];
 

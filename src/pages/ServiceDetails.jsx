@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { servicesData } from "../data/servicesData";
 import StatsSection from "../components/StatsSection";
+import { NavLink } from "react-router-dom";
 
 export default function ServiceDetails() {
   const { id } = useParams();
@@ -48,9 +49,12 @@ export default function ServiceDetails() {
           </p>
 
           {/* CTA */}
-          <button className="px-6 py-3 bg-white text-[#1f2a5a] rounded-full font-medium hover:scale-105 transition">
+          <NavLink
+            to="/contact"
+            className="inline-block px-6 py-3 bg-white text-[#1f2a5a] rounded-full font-medium hover:scale-105 transition"
+          >
             Book Appointment
-          </button>
+          </NavLink>
         </div>
       </section>
 

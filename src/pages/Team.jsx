@@ -19,7 +19,7 @@ export default function Team() {
         {/* Content */}
         <div className="relative z-10 px-4 max-w-3xl">
           <p className="text-[#f3e7c7] mb-3 tracking-wide">
-            Get in Touch
+            Meet Our Experts
           </p>
 
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
@@ -27,13 +27,9 @@ export default function Team() {
           </h1>
 
           <p className="text-gray-200 text-sm md:text-base mb-6">
-            We’re here to help you. Reach out to us for any queries, support, or service requests.
+            A team of dedicated experts committed to your oral health and confident smile.
           </p>
 
-          {/* CTA */}
-          <button className="px-6 py-3 bg-white text-[#1f2a5a] rounded-full font-medium hover:scale-105 transition">
-            Send Message
-          </button>
         </div>
       </section>
 

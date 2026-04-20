@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
 
           {/* Base Image */}
           <img
-            src="https://img.freepik.com/free-photo/dentist-making-professional-teeth-cleaning-withb-cotton-female-young-patient-dental-office_496169-907.jpg?w=740"
+            src="/assets/images/CosmodentImg/Cosmodent-1.jpeg"
             alt="Dental Care"
             className="absolute inset-0 w-full h-full object-cover rounded-2xl"
           />

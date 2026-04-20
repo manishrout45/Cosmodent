@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import ServiceDetails from "./pages/ServiceDetails";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
+import About from "./pages/About";
 
 
 // AOS for scroll animations
@@ -35,6 +36,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/service/:id" element={<ServiceDetails />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
         <Route path="/team" element={<Team />} />
       </Routes>
 

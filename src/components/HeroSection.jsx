@@ -7,13 +7,13 @@ export default function HeroSection() {
       
       {/* Background Image */}
       <img
-        src="https://img.freepik.com/premium-photo/joyful-woman-comfortable-dental-care_730743-158.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80"
+        src="/assets/images/HeroImg2.jpg"
         alt="hero"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      {/* Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#cfa831]/90 via-[#cfa831]/70 to-transparent"></div>
+      {/* Overlay Gradient 
+      <div className="absolute inset-0 bg-gradient-to-r from-[#cfa831]/90 via-[#cfa831]/70 to-transparent"></div> */}
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 text-white py-20">
@@ -31,21 +31,6 @@ export default function HeroSection() {
           Book Appointment
         </button>
 
-        {/* Rating */}
-        <div className="mt-6 flex flex-wrap items-center gap-3 text-sm">
-          <span className="text-white/80">Google Rating</span>
-          <span className="font-semibold">5.0</span>
-
-          <div className="flex text-yellow-400">
-            {[...Array(5)].map((_, i) => (
-              <FaStar key={i} />
-            ))}
-          </div>
-
-          <span className="text-white/80">
-            Based on 23k Reviews
-          </span>
-        </div>
       </div>
 
       {/* 🔥 Bottom Info Bar */}
@@ -66,7 +51,7 @@ export default function HeroSection() {
     <div className="flex flex-col items-center md:items-start px-6">
       <FaMapMarkerAlt className="text-gray-800 mb-2" />
       <p className="font-semibold">Our Location</p>
-      <p className="text-white/70 text-sm">100 S Main St, New York</p>
+      <p className="text-white/70 text-sm">Link Rd, near Royal Enfield Showroom, Surya Vihar, Cuttack</p>
     </div>
 
     {/* Divider */}
@@ -76,7 +61,7 @@ export default function HeroSection() {
     <div className="flex flex-col items-center md:items-start px-6">
       <FaEnvelope className="text-gray-800 mb-2" />
       <p className="font-semibold">Email Us</p>
-      <p className="text-white/70 text-sm">contact@dentiacare.com</p>
+      <p className="text-white/70 text-sm">cosmodent@gmail.com</p>
     </div>
 
   </div>

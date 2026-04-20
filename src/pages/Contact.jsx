@@ -28,11 +28,6 @@ export default function Contact() {
           <p className="text-gray-200 text-sm md:text-base mb-6">
             We’re here to help you. Reach out to us for any queries, support, or service requests.
           </p>
-
-          {/* CTA */}
-          <button className="px-6 py-3 bg-white text-[#1f2a5a] rounded-full font-medium hover:scale-105 transition">
-            Send Message
-          </button>
         </div>
       </section>
 

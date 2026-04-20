@@ -3,36 +3,32 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const images = [
   {
-    src: "https://img.freepik.com/free-photo/dentist-doing-check-up-patient_23-2149206214.jpg?w=740",
-    title: "Before Treatment",
+    src: "/assets/images/CosmodentImg/Cosmodent-2.jpeg",
+    title: "Advanced Dental Equipment",
   },
   {
-    src: "https://img.freepik.com/free-photo/young-female-dentist-showing-patient-dental-xray-dentistry-concept_169016-66973.jpg?w=740",
-    title: "Transformation",
+    src: "/assets/images/CosmodentImg/Cosmodent-5.jpeg",
+    title: "Modern Treatment Setup",
   },
   {
-    src: "https://img.freepik.com/free-photo/dentist-treats-childs-tooth-using-rubber-dam-closeup-tooth-treatment_169016-66968.jpg?w=740",
-    title: "Procedure",
+    src: "/assets/images/CosmodentImg/Cosmodent-13.jpeg",
+    title: "High-Tech Dental Care",
   },
   {
-    src: "https://img.freepik.com/premium-photo/expert-dental-care_425122-3836.jpg?w=740",
-    title: "Dental Care",
+    src: "/assets/images/CosmodentImg/Cosmodent-15.jpeg",
+    title: "Expert Consultation Tools",
   },
   {
-    src: "https://img.freepik.com/premium-photo/smiling-young-woman-indian-descent-against-neutral-background_731930-138429.jpg?w=740",
-    title: "Happy Smile",
-  },
-  {
-    src: "https://img.freepik.com/free-photo/close-up-boy-dentist_23-2149206291.jpg?t=st=1776256609~exp=1776260209~hmac=d1391b2cc12a029c7c1ebe4e5f02e71d7b70d5fed160d83d873a7e19ceaddd8f&w=740",
-    title: "Consultation",
-  },
-  {
-    src: "https://img.freepik.com/free-photo/close-up-dentist-instruments_23-2151042903.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
+    src: "/assets/images/CosmodentImg/Cosmodent-17.jpeg",
     title: "Advanced Tools",
   },
   {
-    src: "https://img.freepik.com/free-photo/young-female-dentist-treating-patients-teeth-with-dental-microscope-dentistry-concept_169016-67001.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740&q=80",
-    title: "Professional Treatment",
+    src: "/assets/images/CosmodentImg/Cosmodent-20.jpeg",
+    title: "Sterilized Clinical Environment",
+  },
+  {
+    src: "/assets/images/CosmodentImg/Cosmodent-14.jpeg",
+    title: "Sterilized Clinical Environment",
   },
 ];
 
@@ -108,7 +104,7 @@ export default function GallerySection() {
                 <div className="relative w-[260px] h-[360px] rounded-2xl overflow-hidden shadow-2xl">
 
                   {/* Glow */}
-                  <div className="absolute -inset-2 bg-[#cfa831] blur-2xl opacity-20"></div>
+                  <div className="absolute -inset-2 bg-[#cfa831] blur-2xl opacity-10"></div>
 
                   {/* Image */}
                   <img
@@ -118,7 +114,7 @@ export default function GallerySection() {
                   />
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-black/20 flex items-end p-4">
+                  <div className="absolute inset-0 bg-black/10 flex items-end p-4">
                     <h3 className="text-white text-sm font-semibold">
                       {item.title}
                     </h3>

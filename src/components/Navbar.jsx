@@ -57,11 +57,13 @@ export default function Navbar() {
       <div className="relative max-w-7xl mx-auto px-4 flex items-center justify-between h-20">
 
         {/* Logo */}
-        <img
-          src="/assets/images/logo/Logo.png"
-          alt="Logo"
-          className="w-14 h-14 object-contain"
-        />
+        <NavLink to="/">
+          <img
+            src="/assets/images/logo/Logo.png"
+            alt="Logo"
+            className="w-14 h-14 object-contain cursor-pointer"
+          />
+        </NavLink>
 
         {/* ================= DESKTOP MENU ================= */}
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
@@ -104,13 +106,15 @@ export default function Navbar() {
             </div>
           </div>
 
+          <NavLink to="/about" className={linkClass}>
+            About Us
+          </NavLink>
+
           <NavLink to="/team" className={linkClass}>
             Our Team
           </NavLink>
 
-          <NavLink to="/blog" className={linkClass}>
-            Blog
-          </NavLink>
+
 
           <NavLink to="/contact" className={linkClass}>
             Contact
@@ -121,10 +125,13 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
 
           {/* Button */}
-          <button className="hidden md:inline-flex group relative items-center justify-center px-5 py-2 rounded-lg text-sm text-white bg-[#C9A23F] overflow-hidden transition duration-300 hover:shadow-lg">
+          <NavLink
+            to="/contact"
+            className="hidden md:inline-flex group relative items-center justify-center px-5 py-2 rounded-lg text-sm text-white bg-[#C9A23F] overflow-hidden transition duration-300 hover:shadow-lg"
+          >
             <span className="relative z-10">Book Appointment</span>
             <span className="absolute inset-0 bg-gray-800 translate-y-full group-hover:translate-y-0 transition duration-300"></span>
-          </button>
+          </NavLink>
 
           {/* Sidebar Button */}
           <button
@@ -183,12 +190,12 @@ export default function Navbar() {
             </ul>
           </div>
 
-          <NavLink to="/team" onClick={() => setMenuOpen(false)}>
-            Our Team
+          <NavLink to="/about" onClick={() => setMenuOpen(false)}>
+            About Us
           </NavLink>
 
-          <NavLink to="/blog" onClick={() => setMenuOpen(false)}>
-            Blog
+          <NavLink to="/team" onClick={() => setMenuOpen(false)}>
+            Our Team
           </NavLink>
 
           <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
@@ -238,10 +245,10 @@ export default function Navbar() {
                 <FaClock /> Monday - Friday 08.00 - 18.00
               </li>
               <li className="flex items-center gap-2">
-                <FaMapMarkerAlt /> 100 S Main St, New York
+                <FaMapMarkerAlt /> Near Royal Enfield Showroom, Link Road, Cuttack
               </li>
               <li className="flex items-center gap-2">
-                <FaEnvelope /> contact@dentiacare.com
+                <FaEnvelope /> cosmodent@gmail.com
               </li>
             </ul>
           </div>

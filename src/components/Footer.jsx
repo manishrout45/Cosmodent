@@ -1,12 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import {
   FaFacebookF,
-  FaTwitter,
   FaWhatsapp,
   FaInstagram,
-  FaYoutube,
+  FaGoogle,
+
 } from "react-icons/fa";
 import { FiMapPin, FiPhone, FiMail } from "react-icons/fi";
+import { servicesData } from "../data/servicesData";
 
 export default function Footer() {
   return (
@@ -44,37 +46,77 @@ export default function Footer() {
 
           {/* SOCIALS */}
           <div className="flex flex-wrap justify-center sm:justify-start gap-4 mt-5 text-gray-300">
-            <FaFacebookF className="hover:text-[#cfa831] cursor-pointer" />
-            <FaTwitter className="hover:text-[#cfa831] cursor-pointer" />
-            <FaWhatsapp className="hover:text-[#cfa831] cursor-pointer" />
-            <FaInstagram className="hover:text-[#cfa831] cursor-pointer" />
-            <FaYoutube className="hover:text-[#cfa831] cursor-pointer" />
+            <a href="https://www.facebook.com/profile.php?id=61565328788230" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF className="hover:text-[#cfa831] cursor-pointer" />
+            </a>
+
+            <a href="https://wa.me/919999999999" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp className="hover:text-[#cfa831] cursor-pointer" />
+            </a>
+            <a href="https://www.instagram.com/clinic.cosmodent/" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="hover:text-[#cfa831] cursor-pointer" />
+            </a>
+             <a href="https://share.google/Ydpt6rZbENAO7bcR1" target="_blank" rel="noopener noreferrer">
+                <FaGoogle className="hover:text-[#cfa831] cursor-pointer" />
+             </a>
           </div>
         </div>
 
-        {/* COMPANY */}
+        {/* Quick Links */}
         <div className="text-center sm:text-left">
-          <h4 className="font-semibold mb-4">Company</h4>
+          <h4 className="font-semibold mb-4">Quick Links</h4>
+
           <ul className="space-y-2 text-gray-300 text-sm">
-            <li className="hover:text-[#cfa831] cursor-pointer">Home</li>
-            <li className="hover:text-[#cfa831] cursor-pointer">Services</li>
-            <li className="hover:text-[#cfa831] cursor-pointer">Gallery</li>
-            <li className="hover:text-[#cfa831] cursor-pointer">About Us</li>
-            <li className="hover:text-[#cfa831] cursor-pointer">Contact</li>
+
+            <li>
+              <NavLink to="/" className="hover:text-[#cfa831] transition">
+                Home
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/services" className="hover:text-[#cfa831] transition">
+                Services
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/team" className="hover:text-[#cfa831] transition">
+                Our Team
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/about" className="hover:text-[#cfa831] transition">
+                About Us
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/contact" className="hover:text-[#cfa831] transition">
+                Contact
+              </NavLink>
+            </li>
+
           </ul>
         </div>
 
         {/* SERVICES */}
         <div className="text-center sm:text-left">
-          <h4 className="font-semibold mb-4">Our Services</h4>
-          <ul className="space-y-2 text-gray-300 text-sm">
-            <li className="hover:text-[#cfa831] cursor-pointer">Dental & Aesthetic Care</li>
-            <li className="hover:text-[#cfa831] cursor-pointer">Root Canal Treatment</li>
-            <li className="hover:text-[#cfa831] cursor-pointer">Smile Designing</li>
-            <li className="hover:text-[#cfa831] cursor-pointer">Scaling & Cleaning</li>
-            <li className="hover:text-[#cfa831] cursor-pointer">Teeth Bleaching</li>
-            <li className="hover:text-[#cfa831] cursor-pointer">Crown & Bridge</li>
-          </ul>
+            <h4 className="font-semibold mb-4">Our Services</h4>
+
+            <ul className="space-y-2 text-gray-300 text-sm">
+              {Object.entries(servicesData).slice(0, 6).map(([key, service]) => (
+                <li key={key}>
+                  <NavLink
+                    to={`/service/${key}`}
+                    className="hover:text-[#cfa831] transition cursor-pointer"
+                  >
+                    {service.title}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
         </div>
 
         {/* CONTACT */}
